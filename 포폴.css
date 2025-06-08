@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background: #000;
+  font-family: "Montserrat";
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  color: #fff;
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat-uniquifier {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.wrap {
+  width: 80%;
+  margin: auto;
+}
+
+.inner {
+  margin: auto;
+  width: 100%;
+  position: relative;
+}
+
+header {
+  color: #fff;
+  outline: 1px solid rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  padding: 0 7%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-weight: 600;
+  font-size: 25px;
+}
+header ul {
+  display: flex;
+  gap: 20px;
+  font-weight: 600;
+}
+
+header ul li:hover {
+  color: #0088FF;
+  transition: all 0.2s ease-in-out;
+}
+
+.contents {
+  width: 100%;
+}
+.contents .hi {
+  margin-top: 25%;
+  width: 100%;
+  position: relative;
+  color: #fff;
+  font-size: 8vw;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 20%;
+}
+.contents .hi span {
+  color: #fff;
+  font-size: 3vw;
+  font-weight: 500;
+}
+.contents #about {
+  margin-bottom: 350px;
+}
+.contents #about h1 {
+  color: #fff;
+  font-size: 4vw;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.contents #about .pro {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+.contents #about .pro .profile {
+  display: flex;
+  gap: 123px;
+  margin-bottom: 60px;
+  width: 100%;
+  height: 520px;
+  border-bottom: 3px solid #fff;
+}
+.contents #about .pro .profile img {
+  width: 420px;
+  height: 420px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: #0088FF;
+  border-radius: 50%;
+  margin-left: 57px;
+}
+.contents #about .pro .profile .protxt {
+  margin-top: 54px;
+  width: 580px;
+  height: 330px;
+}
+.contents #about .pro .profile .protxt h1 {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 3vw;
+}
+.contents #about .pro .profile .protxt li {
+  font-size: 30px;
+  font-weight: bold;
+  color: #0088FF;
+  line-height: 1.8;
+}
+.contents #about .pro .profile .protxt span {
+  color: #fff;
+  font-weight: normal;
+}
+.contents #about .info1 {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+.contents #about .info1 h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 57px;
+  color: #0088FF;
+}
+.contents #about .info1 table {
+  margin-left: 57px;
+  width: 1093px;
+}
+.contents #about .info1 table th {
+  text-align: left;
+  padding-bottom: 40px;
+}
+.contents #about .info1 table td {
+  text-align: right;
+}
+.contents #about .info2 {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+.contents #about .info2 h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 57px;
+  color: #0088FF;
+}
+.contents #about .info2 table {
+  margin-left: 57px;
+  width: 1093px;
+}
+.contents #about .info2 table th {
+  text-align: left;
+  padding-bottom: 40px;
+}
+.contents #about .info2 table td {
+  text-align: right;
+}
+.contents #about .info2 {
+  margin-top: 50px;
+}
+.contents #about .info2 h3 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+.contents #about .info2 ul {
+  font-size: 20px;
+}
+.contents #about .info2 li {
+  font-weight: bold;
+  line-height: 2;
+  display: flex;
+  gap: 45px;
+}
+.contents #about .info2 span {
+  font-weight: normal;
+}
+.contents #skill {
+  margin-bottom: 350px;
+}
+.contents #skill h1 {
+  color: #fff;
+  font-size: 4vw;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.contents #skill ul {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+}
+.contents #skill li {
+  text-align: center;
+  width: 120px;
+}
+.contents #skill img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 15px;
+}
+.contents #skill li:hover img {
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+}
+.contents #project {
+  margin-bottom: 80px;
+}
+.contents #project h1 {
+  color: #fff;
+  font-size: 4vw;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.contents #project ul {
+  display: flex;
+  gap: 10px;
+}
+.contents #project ul li {
+  width: 500px;
+  height: 400px;
+}
+.contents #project ul .box {
+  padding: 10px;
+}
+.contents #project ul img {
+  width: 500px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
+}
+.contents #project ul span {
+  font-weight: bold;
+  font-size: 20px;
+}
+.contents #project ul p {
+  margin: 25px 0 5px;
+}
+.contents #project li:hover img {
+  opacity: 0.8;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  height: 120px;
+  border-top: 1px solid #333;
+  background: #191919;
+}
+footer p {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 23px;
+}
+footer span {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+@media (max-width: 1024px) {
+  .contents #about {
+    margin-bottom: 100px;
+  }
+  .contents #about .pro .profile {
+    gap: 30px;
+    align-items: center;
+  }
+  .contents #about .pro .profile img {
+    width: 210px;
+    height: 210px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: none;
+    margin-left: 0px;
+  }
+  .contents #about .pro .profile .protxt {
+    width: 400px;
+    height: 330px;
+  }
+  .contents #about .pro .profile .protxt span {
+    font-size: 20px;
+    padding-left: 30px;
+  }
+  .contents #about .info1 table {
+    width: 85%;
+  }
+  .contents #about .info2 table {
+    width: 85%;
+  }
+  .contents #skill {
+    margin-bottom: 200px;
+  }
+  .contents #skill ul {
+    flex-flow: row wrap;
+  }
+  .contents #project li {
+    width: 400px;
+  }
+  .contents #project li .box img {
+    width: 100%;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .contents #project li span {
+    font-size: 18px;
+  }
+  .contents #project li p {
+    font-size: 15px;
+    line-height: 1.3;
+  }
+}
+@media (max-width: 430px) {
+  html {
+    scrollbar-width: none;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  .wrap {
+    width: 75%;
+    margin: auto;
+  }
+  header {
+    padding: 0 7%;
+  }
+  header h1 {
+    font-size: 20px;
+  }
+  header ul {
+    display: none;
+  }
+  .contents .hi .wel {
+    font-size: 44px;
+  }
+  .contents #about {
+    margin-bottom: 100px;
+  }
+  .contents #about .pro {
+    width: 100%;
+  }
+  .contents #about .pro .profile {
+    display: block;
+    height: 550px;
+  }
+  .contents #about .pro .profile h1 {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 35px !important;
+  }
+  .contents #about .pro .profile img {
+    margin-left: 0px;
+    height: auto;
+  }
+  .contents #about .pro .profile .protxt {
+    margin-top: 30px;
+  }
+  .contents #about .pro .profile .protxt li {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0088FF;
+    line-height: 1.8;
+  }
+  .contents #about .pro .profile .protxt li span {
+    font-size: 16px;
+  }
+  .contents #about .info1 {
+    margin: 0;
+    width: 100%;
+    margin-top: 80px;
+  }
+  .contents #about .info1 h1 {
+    font-size: 20px;
+    margin-left: 0;
+  }
+  .contents #about .info1 table {
+    margin-left: 0;
+    width: 100%;
+  }
+  .contents #about .info1 table tr {
+    line-height: 1.2;
+  }
+  .contents #about .info1 table th {
+    text-align: left;
+    padding-bottom: 40px;
+  }
+  .contents #about .info1 table td {
+    text-align: right;
+  }
+  .contents #about .info2 {
+    margin: 0;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .contents #about .info2 h1 {
+    font-size: 20px;
+    margin-left: 0;
+  }
+  .contents #about .info2 table {
+    margin-left: 0;
+    width: 100%;
+  }
+  .contents #about .info2 table th {
+    text-align: left;
+    padding-bottom: 40px;
+  }
+  .contents #about .info2 table td {
+    text-align: right;
+  }
+  .contents #skill {
+    margin-bottom: 100px;
+    width: 100%;
+  }
+  .contents #skill ul {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+  }
+  .contents #project {
+    width: 100%;
+  }
+  .contents #project .box {
+    width: 380px;
+  }
+  .contents #project ul {
+    display: block;
+  }
+  .contents #project li {
+    width: 320px !important;
+    margin-bottom: 50px;
+  }
+  .contents #project p {
+    width: 310px;
+  }
+  .contents #project img {
+    width: 300px !important;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  footer {
+    width: 430px;
+  }
+}/*# sourceMappingURL=포폴.css.map */
